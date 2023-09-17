@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Right to Left Arabic Page -->
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Collector</title>
+    <link rel="stylesheet" href="js/main.css">
+    <script src="https://kit.fontawesome.com/ac0713d0ba.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/favicon.png">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Home Heading -->
+        <h1>جلب المشاريع من <span>Github</span> بإسم المستخدم</h1>
+        <!-- Main Username Input -->
+        <input type="text" id="username" placeholder="اسم المستخدم في موقع Github">
+        <span style="margin-top: -15px;">مثال :
+            <span id="dj" class="ex">Microsoft</span>,
+            <span id="oz" class="ex">Samsung</span>
+        </span>
+        <span id="error"></span>
+        <!-- Button -->
+        <div class="btns">
+            <input type="submit" value="جلب المشاريع" id="getbutton">
+            <!-- Clear -->
+            <a class="disabled" href="javascript:void(0)" id="clear">
+                <i class="fa-solid fa-trash-can"></i>
+            </a>
+        </div>
+
+        <!-- Content Container -->
+        <div id="content">
+            <h2 id="nodata">لا توجد بيانات</h2>
+            <!-- Repositories -->
+            <div id="repos"></div>
+        </div>
+    </div>
+    <!-- Leftside buttons -->
+    <div class="sidebtns">
+        <i id="arrup" data-tooltip="إلي الأعلى" class="fa-solid fa-arrow-up"></i>
+        <i id="reload" data-tooltip="إعادة تحميل" class="fa-solid fa-rotate-right"></i>
+        <i id="arrdown" data-tooltip="إلي الأسفل" class="fa-solid fa-arrow-down"></i>
+
+    </div>
+    <!-- Copyright Footer -->
+    <div class="copyright">
+        <span>Scripted & Designed with ❤️ by <a href="#">Mhmd Amr</a></span>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
