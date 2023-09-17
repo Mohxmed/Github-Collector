@@ -114,7 +114,7 @@ span#error {
     right: -280px;
     top: 50px;
     display: flex;
-    opacity: .7;
+    opacity: 1;
     z-index: 9;
     transition: all .1s linear;
 }
